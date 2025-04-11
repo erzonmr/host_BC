@@ -15,8 +15,8 @@
   font-weight: bold;
 }
 
-/* Título principal centrado */
-.titulo-principal {
+/* Título principal */
+h1 {
   text-align: center;
   color: #a64253;
 }
