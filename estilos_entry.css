@@ -8,9 +8,10 @@
 
 /* Texto base destacado */
 .texto-base {
-  background-color: #f4f1f2;
-  padding: 10px;
-  border-left: 5px solid #633443;
-  margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: bold; /* Negrita */
+  padding: 15px;        /* Espaciado interno de 15px en todos los lados */
+  margin: 10px 0;       /* Margen vertical de 10px, sin margen horizontal */
+  background: #f4f1f2;  /* Fondo blanco ligeramente grisáceo */
+  border-left: 5px solid #a64253;  /* Borde izquierdo rojo de 5px de ancho */
+  border-radius: 8px;   /* Esquinas redondeadas */
 }
