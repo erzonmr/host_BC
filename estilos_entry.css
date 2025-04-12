@@ -15,3 +15,8 @@
   border-left: 5px solid #a64253;  /* Borde izquierdo rojo de 5px de ancho */
   border-radius: 8px;   /* Esquinas redondeadas */
 }
+
+/* Números lista en negrita */
+.lista-negrita li::marker {
+  font-weight: bold;
+}
