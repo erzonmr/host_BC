@@ -1,22 +1,93 @@
-/* Imagen destacada */
-.entrada-img {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 100%;
+/* ====== TARJETA ESTILIZADA BLOGGER ====== */
+
+/* Tarjeta principal */
+.tarjeta {
+  width: 100%;
+  max-width: 600px; /* más amplio y flexible */
+  margin: 30px auto;
+  background-color: #ffffff;
   border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-/* Texto base destacado */
-.texto-base {
-  font-weight: bold; /* Negrita */
-  padding: 15px;        /* Espaciado interno de 15px en todos los lados */
-  margin: 10px 0;       /* Margen vertical de 10px, sin margen horizontal */
-  background: #f4f1f2;  /* Fondo blanco ligeramente grisáceo */
-  border-left: 5px solid #a64253;  /* Borde izquierdo rojo de 5px de ancho */
-  border-radius: 8px;   /* Esquinas redondeadas */
+/* Imagen superior */
+.tarjeta-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #f0f0f0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-/* Números lista en negrita */
-.lista-negrita li::marker {
+/* Contenido interno */
+.tarjeta-contenido {
+  padding: 25px;
+}
+
+/* Título */
+.tarjeta-titulo {
+  text-align: center;
+  color: #a64253;
+  font-size: 1.8rem;
   font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+/* Texto base (versículo) */
+.tarjeta-texto-base {
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: bold;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+/* Descripción introductoria */
+.tarjeta-descripcion {
+  color: #333333;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: left; 
+}
+
+/* Lista de puntos con versículos */
+.tarjeta-lista {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: decimal;
+  color: #333333;
+}
+
+.tarjeta-lista li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.tarjeta-lista b {
+  color: #a64253;
+  font-weight: bold;
+}
+
+.tarjeta-lista li::marker {
+  font-weight: bold;
+}
+
+/* Responsivo para móviles */
+@media (max-width: 480px) {
+  .tarjeta {
+    margin: 20px 10px;
+  }
+  .tarjeta-contenido {
+    padding: 15px;
+  }
+  .tarjeta-titulo {
+    font-size: 1.5rem;
+  }
+  .tarjeta-texto-base {
+    font-size: 1rem;
+  }
 }
