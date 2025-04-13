@@ -1,9 +1,9 @@
-/* ====== TARJETA ESTILIZADA BLOGGER ====== */
+/* ====== ESTILO PARA BOSQUEJOS EN BLOGGER ====== */
 
 /* Tarjeta principal */
-.tarjeta {
+.bosquejo {
   width: 100%;
-  max-width: 600px; /* más amplio y flexible */
+  max-width: 600px;
   margin: 30px auto;
   background-color: #ffffff;
   border-radius: 12px;
@@ -12,7 +12,7 @@
 }
 
 /* Imagen superior */
-.tarjeta-img {
+.bosquejo-img {
   width: 100%;
   height: auto;
   display: block;
@@ -22,12 +22,12 @@
 }
 
 /* Contenido interno */
-.tarjeta-contenido {
+.bosquejo-contenido {
   padding: 25px;
 }
 
 /* Título */
-.tarjeta-titulo {
+.bosquejo-titulo {
   text-align: center;
   color: #a64253;
   font-size: 1.8rem;
@@ -37,57 +37,63 @@
 }
 
 /* Texto base (versículo) */
-.tarjeta-texto-base {
+.texto-base {
   text-align: center;
   font-size: 1.2rem;
   font-style: italic;
   font-weight: bold;
   color: #777777;
-  margin-bottom: 20px;
-}
+  margin-bottom: 12px; 
 
 /* Descripción introductoria */
-.tarjeta-descripcion {
+.intro {
   color: #333333;
-  margin-bottom: 20px;
+  margin-bottom: 15px; 
   line-height: 1.6;
-  text-align: left; 
+  text-align: left;
 }
 
 /* Lista de puntos con versículos */
-.tarjeta-lista {
+.puntos-bosquejo {
   padding-left: 20px;
   margin: 0;
   list-style-type: decimal;
   color: #333333;
 }
 
-.tarjeta-lista li {
+.puntos-bosquejo li {
   margin-bottom: 10px;
   line-height: 1.4;
 }
 
-.tarjeta-lista b {
+.puntos-bosquejo b {
   color: #a64253;
   font-weight: bold;
 }
 
-.tarjeta-lista li::marker {
+.puntos-bosquejo li::marker {
   font-weight: bold;
 }
 
 /* Responsivo para móviles */
 @media (max-width: 480px) {
-  .tarjeta {
+  .bosquejo {
     margin: 20px 10px;
   }
-  .tarjeta-contenido {
+
+  .bosquejo-contenido {
     padding: 15px;
   }
-  .tarjeta-titulo {
+
+  .bosquejo-titulo {
     font-size: 1.5rem;
   }
-  .tarjeta-texto-base {
+
+  .texto-base {
     font-size: 1rem;
+  }
+
+  .puntos-bosquejo {
+    padding-left: 15px; 
   }
 }
