@@ -1,14 +1,14 @@
  
-/* ====== ESTILO PARA BOSQUEJOS EN BLOGGER (FINAL) ====== */
+/* ====== ESTILO PARA BOSQUEJOS EN BLOGGER ====== */
 
 /* Contenedor principal */
 .bosquejo {
   width: 100%;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 40px auto 30px auto;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 
@@ -37,27 +37,26 @@
   letter-spacing: 1px;
 }
 
-/* Texto base (versículo) */
+/* Texto base */
 .texto-base {
   text-align: center;
   font-size: 1.2rem;
   font-style: italic;
   font-weight: bold;
-  color: #777777;
   margin-bottom: 12px;
 }
 
 /* Introducción o resumen */
 .intro {
-  color: #333333;
   margin-bottom: 15px;
+  font-weight: 400;
   line-height: 1.6;
   text-align: left;
 }
 
 /* Lista personalizada con numeración en negrita */
 .puntos-bosquejo {
-  color: #333333;
+  
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -70,13 +69,7 @@
 
 .numero {
   font-weight: bold;
-  color: #a64253;
   margin-right: 5px;
-}
-
-.punto b {
-  color: #a64253;
-  font-weight: bold;
 }
 
 
@@ -102,6 +95,4 @@
   .puntos-bosquejo {
     padding-left: 0;
   }
-
-
 }
